@@ -13,5 +13,9 @@ Tags:         	e-commerce, two-columns, left-sidebar, right-sidebar, custom-back
 */
 
 body {
-    background-color: #A5C0B7;
+    background-color: #EDFFE2;
+}
+
+.entry-header {
+    text-align: center;
 }

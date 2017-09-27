@@ -16,10 +16,10 @@ get_header(); ?>
 				<div class="page-content">
 
 					<header class="page-header">
-						<h1 class="page-title"><?php esc_html_e( 'Estamos usando un Tema Hijo y no encontramos lo que buscas' ); ?></h1>
+						<h1 class="page-title"><?php esc_html_e( 'Not Found 👽' ); ?></h1>
 					</header><!-- .page-header -->
 
-					<p><?php esc_html_e( 'Nothing was found at this location. Try searching, or check out the links below.', 'storefront' ); ?></p>
+					<p><?php esc_html_e( 'Do you really want search that? Try it on google, this is not the site.', 'storefront' ); ?></p>
 
 					<?php
 					echo '<section aria-label="' . esc_html__( 'Search', 'storefront' ) . '">';
