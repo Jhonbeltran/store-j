@@ -10,6 +10,8 @@ function add_role_viajero()
             'edit_posts'   => true,
             'upload_files' => true,
             'publish_posts' => true,
+            'edit_published_posts' => true,
+            //'delete_published_posts' => true,
         ]
     );
 }
