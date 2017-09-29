@@ -58,3 +58,94 @@ function reseñas_init() {
 }
 
 add_action( 'init', 'reseñas_init' );
+
+if(function_exists("register_field_group"))
+{
+	register_field_group(array (
+		'id' => 'acf_viaje',
+		'title' => 'Viaje',
+		'fields' => array (
+			array (
+				'key' => 'field_59ce7d5f283a9',
+				'label' => 'Destino',
+				'name' => 'destino',
+				'type' => 'text',
+				'default_value' => '',
+				'placeholder' => '',
+				'prepend' => '',
+				'append' => '',
+				'formatting' => 'html',
+				'maxlength' => '',
+			),
+			array (
+				'key' => 'field_59ce7d69283aa',
+				'label' => 'Vacunas Requeridas',
+				'name' => 'vacunas_requeridas',
+				'type' => 'text',
+				'default_value' => 'Ninguna',
+				'placeholder' => '',
+				'prepend' => '',
+				'append' => '',
+				'formatting' => 'html',
+				'maxlength' => '',
+			),
+			array (
+				'key' => 'field_59ce7d90283ab',
+				'label' => 'Vacunas Recomendadas',
+				'name' => 'vacunas_recomendadas',
+				'type' => 'text',
+				'default_value' => 'Ninguna',
+				'placeholder' => '',
+				'prepend' => '',
+				'append' => '',
+				'formatting' => 'html',
+				'maxlength' => '',
+			),
+			array (
+				'key' => 'field_59ce7da7283ac',
+				'label' => 'Nivel de peligro',
+				'name' => 'nivel_de_peligro',
+				'type' => 'select',
+				'choices' => array (
+					'Baja' => 'Baja',
+					'Media' => 'Media',
+					'Alta' => 'Alta',
+					'Extrema' => 'Extrema',
+				),
+				'default_value' => '',
+				'allow_null' => 0,
+				'multiple' => 0,
+			),
+			array (
+				'key' => 'field_59ce7fe8beb85',
+				'label' => 'Moneda local',
+				'name' => 'moneda_local',
+				'type' => 'text',
+				'default_value' => '',
+				'placeholder' => '',
+				'prepend' => '',
+				'append' => '',
+				'formatting' => 'html',
+				'maxlength' => '',
+			),
+		),
+		'location' => array (
+			array (
+				array (
+					'param' => 'post_type',
+					'operator' => '==',
+					'value' => 'viaje',
+					'order_no' => 0,
+					'group_no' => 0,
+				),
+			),
+		),
+		'options' => array (
+			'position' => 'normal',
+			'layout' => 'no_box',
+			'hide_on_screen' => array (
+			),
+		),
+		'menu_order' => 0,
+	));
+}
