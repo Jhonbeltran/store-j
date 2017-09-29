@@ -7,3 +7,5 @@ Colaborador: Puede crear contenido pero no puede publicarlo. UNA VEZ PUBLICAN SU
 Autor: Puede crear contenido y publicarlo. TAN SOLO PUEDE GESTIONAR SUS CONTENIDOS PROPIOS.
 Editor: Puede crear contenido, publicarlo. CUALQUIER CONTENIDO DISPONIBLE EN EL SITIO. No tiene acceso a funciones de configuración con Temas, Plugins y Ajustes
 Administrador: Gestiona el sitio a nivel completo.
+
+## Para recargar nuestra página cuando hay problemas de caché usamos Ctrl + Shift + R
