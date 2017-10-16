@@ -268,3 +268,20 @@ add_action( 'storefront_single_post_viaje',   'storefront_post_content_viaje',  
 add_action( 'storefront_single_post_bottom',  'storefront_post_nav',             10 );
 add_action( 'storefront_single_post_bottom',  'storefront_display_comments',     20 );
 add_action( 'storefront_post_content_before', 'storefront_post_thumbnail',       10 );
+
+add_action('rest_api_init', 'register_custom_fields');
+
+function register_custom_fields()
+{
+    register_rest_field(
+        'viaje',
+        'destino',
+        array(
+            'get_callback' => 'show_fields'
+        )
+    );
+}
+
+function show_fields( $object, $field_name, $request ) {
+    return get_post_meta( $object[ 'id' ], $field_name, true );
+}
