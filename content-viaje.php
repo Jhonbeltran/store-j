@@ -8,7 +8,7 @@
 ?>
 
 <div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-
+	<h1>Archivo <strong>content-viaje.php</strong></h1>
 	<?php
 	do_action( 'storefront_single_post_top' );
 
@@ -19,7 +19,7 @@
 	 * @hooked storefront_post_meta            - 20
 	 * @hooked storefront_post_content         - 30
 	 */
-	do_action( 'storefront_single_post' );
+	do_action( 'storefront_single_post_viaje' );
 
 	/**
 	 * Functions hooked in to storefront_single_post_bottom action

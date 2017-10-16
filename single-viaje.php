@@ -9,7 +9,7 @@ get_header(); ?>
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
-		<h1>Let it die </h1>
+		<h1>Archivo <strong>single-viaje.php</strong></h1>
 		<?php while ( have_posts() ) : the_post();
 			
 			do_action( 'storefront_single_post_before' );

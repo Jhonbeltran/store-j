@@ -19,3 +19,9 @@ body {
 .entry-header {
     text-align: center;
 }
+
+.viaje_label{
+	float: left;
+	min-width: 22px;
+	font-weight: bold;
+}
